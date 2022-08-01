@@ -55,50 +55,101 @@ Also include in the notes whether outliers were processed (and how), as well as 
 Variable name | Description | Timing | Aggregation | Source | Notes
 
 Age | Age of patient | Any time during ICU stay | Exclude under 18 | patients |
+
 Gender | Gender of patient | Any time during ICU stay | N/A | patients |
+
 Weight | Admission weight | Any time during ICU stay | N/A | chartevents |
+
 SOFA score | Sequential organ failure assessment score | Any time during ICU stay | N/A | chartevents |
+
 SAPS-II score | Simplifed acute physiology score-II  | Any time during ICU stay | N/A | sapsii |
-Hospital stay | Length of stay in hospital | When patient is dishcarged | N/A | admissions | Take difference b/w admittime and dischtime
+
+Hospital stay | Length of stay in hospital | When patient is dishcarged | N/A | admissions | Take 
+difference b/w admittime and dischtime
+
 ICU stay | Length of stay in ICU | When patient leaves ICU | los must be 24h+ | icustays |
+
+
 Fluid intake | Daily fluid intake | Once every 24h | N/A | inputevents |
+
 Urine output | Daily urine output | Each unique day | N/A | urine_output |
-Mortality | If patient dies in 28 days | Any time in 28-day period | exclude after 28 days | admissions | 
+
+Mortality | If patient dies in 28 days | Any time in 28-day period | exclude after 28 days | 
+admissions | 
+
 Heart failure | Congestive heart failure | Any time during ICU stay | N/A | diagnoses_icd |
+
 Myocardial infarction | Patient myocardial infarction | Any time during ICU stay | N/A | diagnoses_icd |
-Cerebrovascular disease | Patient cerebrovascular disease | Any time during ICU stay | N/A | diagnoses_icd |
+
+Cerebrovascular disease | Patient cerebrovascular disease | Any time during ICU stay | N/A | 
+diagnoses_icd |
+
 Chronic pulmonary disease | Patient chronic pulmonary disease | Any time during ICU stay | N/A | diagnoses_icd | "disease" not explicitly written in MIMIC
+
 Mild liver disease | Patient mild liver disease | Any time during ICU stay | N/A | diagnoses_icd | How to determine mild?
+
 Severe liver disease | Patient severe liver disease | Any time during ICU stay | N/A | diagnoses_icd |
+
 Diabetes w/0 comp | Diabetes without complication | Any time during ICU stay | N/A | diagnoses_icd |
+
 Diabetes w comp | Diabetes with complication | Any time during ICU stay | N/A | diagnoses_icd |
+
 Renal disease | Patient renal disease | Any time during ICU stay | N/A | diagnoses_icd |
+
 Malignant cancer | patient malignant cancer | Any time during ICU stay | N/A | diagnoses_icd | Over 1000 types on MIMIC?
+
 AIDS | Patient AIDS | Any time during ICU stay | N/A | ? | Could not find
+
 Anion gap | Patient anion gap | Any time during ICU stay | Max | labevents |
+
 Albumin | Patient albumin | Any time during ICU stay | Min | labevents | Many different types?
+
 Bilirubin | Patient bilirubin | Any time during ICU stay | Max | labevents | Many different types?
+
 Creatinine | Patient max creatinine | Any time during ICU stay | Max | labevents | Many different types?
+
 Glucose | Patient max glucose | Any time during ICU stay | Max | labevents | Many different types?
+
 Hemoglobin | Patient max hemoglobin | Any time during ICU stay | Min | labevents | Many different types?
+
 Platelet | Patient min platelet | Any time during ICU stay | Min | labevents | Many different types?
+
 Potassium | Patient max potassium| Any time during ICU stay | Max | labevents | Many different types?
-APTT | Patient activated partial thromboplastin clotting time | Any time during ICU stay | Max | ? | Could not find
+
+APTT | Patient activated partial thromboplastin clotting time | Any time during ICU stay | Max | ? | 
+Could not find
+
 INR | Patient international normalized ratio | Any time during ICU stay | Max | labevents | "INR(PT)"?
+
 PT | Patient max prothrombin time | Any time during ICU stay | Max | labevents |
+
 Sodium max | Patient max sodium | Any time during ICU stay | Max | labevents | Many different types?
+
 Sodium min | Patient min sodium | Any time during ICU stay | Min | labevents | Many different types?
-Blood urea nitrogen | Patient Blood urea nitrogen | Any time during ICU stay | Max | labevents | Unsure which one is blood
+
+Blood urea nitrogen | Patient Blood urea nitrogen | Any time during ICU stay | Max | labevents | Unsure 
+which one is blood
+
 White blood cell count | Patient max WBC count | Any time during ICU stay | Max | labevents |
+
 Heart rate | Patient mean heart rate| Any time during ICU stay | Mean | chartevents |
+
 Systolic blood pressure | Patient systolic BP | Any time during ICU stay | Min | chartevents | Unsure which one?
+
 Diastolic blood pressure | Patient diastolic BP | Any time during ICU stay | Min | chartevents | Unsure which one?
+
 Mean arterial blood pressure | Patient mean arterial BP | Any time during ICU stay | Min | chartevents |
+
 Respiratory rate | Patient max respiratory rate | Any time during ICU stay | Max | chartevents |
+
 Pulse O2 saturation | Patient min pulse o2 sat. | Any time during ICU stay | Min | chartevents | Unsure which one?
+
 Max lactate | Patient max lactate | First 24 h | Max | labevents |
+
 Mean lactate | Patient mean lactate | First 24 h | Mean | labevents |
+
 Lactate load | Patient lactate load | First 24 h | AUC of lactate | labevents | How to get AUC?
+
 Normalized lactate load | Patient normalized lactate load | First 24 h | AUC/time | labevents | How to get AUC?
 
 
