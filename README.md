@@ -1,6 +1,6 @@
 # mimic-analysis-template
 
-https://zenodo.org/badge/508423044.svg
+https://zenodo.org/badge/latestdoi/508423044
 
 A template for conducting an analysis in the MIMIC clinical databases
 
