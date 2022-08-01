@@ -1,5 +1,7 @@
 # mimic-analysis-template
 
+https://zenodo.org/badge/508423044.svg
+
 A template for conducting an analysis in the MIMIC clinical databases
 
 ## Quickstart
