@@ -1,3 +1,15 @@
+# Import libraries
+from datetime import timedelta
+import os
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# below imports are used for pretty pandas dataframes and plots
+from IPython.display import display, HTML
+%matplotlib inline
+
 WITH tally AS (
 SELECT ie.subject_id, ie.stay_id, ie.hadm_id
 , SUM(CASE WHEN DATE_DIFF(ce.charttime, ie.intime, HOUR) <= 24 AND DATE_DIFF(ce.charttime, ie.intime, HOUR) >= 0 THEN 1 ELSE 0 END) as count_
