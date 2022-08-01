@@ -27,15 +27,25 @@ As stated in the last paragraph, it was uncomfirmed how outliers were handled. T
 A table comparing the population measures between the original and the reproduction.
 
 Population measure | Original Study | Reproduction
+
 Total patients | 21,333 | 17,782
+
 Age (Year) | 65.1 ± 16 | 64.1±15.9
+
 Weight (kg) | 83 ± 23.8 | 83.5 ± 23.5
+
 Female (%) | 8528 (40) | 6997 (39.3)
+
 SOFA score | 5.9 ± 3.7 | 7.0 ± 3.9
+
 SAPS-II score | 41.7 ± 15.1 | 40.15 ± 14.6
+
 Length of hospital stay | 8 (5.1, 13.5) | 12.2 ± 13.3
+
 Length of ICU stay | 2.7 (1.4, 5.2) | 4.9 ± 6.2
+
 24-hour urine output | 1515 (891, 2330) | 1580 (980, 2375)
+
 Die in 28 days | 3569 (16.7) | 2376 (13.4)
 
 
@@ -44,7 +54,9 @@ Die in 28 days | 3569 (16.7) | 2376 (13.4)
 A table of the evaluation measures comparing the results in the original study and the reproduction. Also include the final size of the cohort, proportion of individuals excluded, and other important summary measures for the study.
 
 Evaluation measure | Original Study | Reproduction
+
 Cohort | 21,333 | 17,782
+
 Proportion excluded | 72.1% | 76.8% |
 
 ## Conclusion(s) regarding reproducibility
