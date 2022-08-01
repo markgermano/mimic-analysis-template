@@ -24,3 +24,6 @@ LEFT JOIN `physionet-data.mimic_derived.sepsis3` AS sep
   ON ie.stay_id = sep.stay_id
 WHERE max IS NOT NULL
 ORDER BY subject_id, hadm_id, stay_id
+
+-- Make exclusions
+df = df.loc[(df['exclude_non_adult'] == 0) & (df['exclude_not_first_icu'] == 0) & (df['exclude_not_2_lactate'] == 0) & (df['exclude_short_los'] == 0)]
